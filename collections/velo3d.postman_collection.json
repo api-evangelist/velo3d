@@ -1,0 +1,8 @@
+{
+  "info": {
+    "name": "Velo3D",
+    "description": "Velo3D builds metal additive-manufacturing systems (Sapphire printers, Flow, Assure, Intelligent Fusion). As of 2026-06-20 Velo3D does not publish a documented public developer API, so this collection contains no requests. It is a valid placeholder maintained for catalog consistency.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": []
+}

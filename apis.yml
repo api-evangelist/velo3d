@@ -1,0 +1,106 @@
+aid: velo3d
+url: https://raw.githubusercontent.com/api-evangelist/velo3d/refs/heads/main/apis.yml
+name: Velo3D
+kind: company
+description: Velo3D builds metal additive-manufacturing systems for aerospace, defense,
+  and energy - the Sapphire family of laser powder bed fusion printers, Flow print-preparation
+  software, the Assure quality-assurance and control system, all powered by the Intelligent
+  Fusion manufacturing process. These are enterprise hardware and software products;
+  Velo3D does not publish a documented public developer API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Additive Manufacturing
+- Metal 3D Printing
+- Laser Powder Bed Fusion
+- Aerospace
+- Defense
+created: '2026-06-20'
+modified: '2026-06-20'
+specificationVersion: '0.19'
+apis:
+- aid: velo3d:sapphire-printers
+  name: Velo3D Sapphire Printers
+  tags:
+  - Sapphire
+  - Metal 3D Printing
+  - Laser Powder Bed Fusion
+  - Hardware
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://velo3d.com/
+  properties:
+  - url: https://velo3d.com/
+    type: Documentation
+  - url: openapi/velo3d-openapi.yml
+    type: OpenAPI
+  description: The Sapphire family (Sapphire, Sapphire XC, Sapphire 1MZ) of laser
+    powder bed fusion metal 3D printers, using multiple 1-kilowatt lasers to produce
+    large-format support-free parts. Product feature - no documented public developer
+    API surface.
+- aid: velo3d:flow-print-prep
+  name: Velo3D Flow Print Preparation
+  tags:
+  - Flow
+  - Print Preparation
+  - CAD
+  - Software
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://velo3d.com/
+  properties:
+  - url: https://velo3d.com/
+    type: Documentation
+  - url: openapi/velo3d-openapi.yml
+    type: OpenAPI
+  description: Flow print-preparation software with native CAD import for designing
+    and preparing support-free builds, including Flow Developer for engineers to tune
+    process parameters within the Sapphire ecosystem. Product feature - no documented
+    public developer API surface.
+- aid: velo3d:assure-qa
+  name: Velo3D Assure Quality Assurance
+  tags:
+  - Assure
+  - Quality Assurance
+  - In-Situ Monitoring
+  - Software
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://velo3d.com/
+  properties:
+  - url: https://velo3d.com/
+    type: Documentation
+  - url: openapi/velo3d-openapi.yml
+    type: OpenAPI
+  description: The Assure quality-assurance and control system, a real-time dashboard
+    using multi-sensor physics-based detection to validate powder health, chamber
+    atmosphere, optics, and per-layer melt-pool data during a build. Product feature
+    - the dashboard is an operator interface, not a documented public developer API.
+- aid: velo3d:intelligent-fusion
+  name: Velo3D Intelligent Fusion
+  tags:
+  - Intelligent Fusion
+  - Process Technology
+  - Manufacturing
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://velo3d.com/
+  properties:
+  - url: https://velo3d.com/
+    type: Documentation
+  - url: openapi/velo3d-openapi.yml
+    type: OpenAPI
+  description: The Intelligent Fusion manufacturing process that integrates the Sapphire
+    printers, Flow, and Assure into an end-to-end metal additive-manufacturing
+    workflow. Process technology - no documented public developer API surface.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/velo3d
+- type: Website
+  url: https://velo3d.com/
+- type: Documentation
+  url: https://support.velo3d.com/
+- type: Plans
+  url: plans/velo3d-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/velo3d-rate-limits.yml
+- type: FinOps
+  url: finops/velo3d-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

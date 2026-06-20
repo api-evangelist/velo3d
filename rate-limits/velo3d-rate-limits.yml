@@ -1,0 +1,41 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Velo3D
+providerId: velo3d
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Additive Manufacturing
+- Metal 3D Printing
+- Laser Powder Bed Fusion
+- Aerospace
+- Defense
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Velo3D does not publish a documented public developer API, so there are no
+  HTTP rate limits, quotas, or throttling policies to document. The Sapphire
+  printers, Flow software, and Assure dashboard are enterprise hardware and
+  software products operated on customer or service-bureau premises rather than
+  consumed as a metered cloud API. This artifact is not reconciled because no
+  public API rate-limiting surface exists.
+notes: >-
+  No public API exists; any operational throughput limits are physical
+  (printer build volume, laser count, layer time) rather than API rate limits.
+  Revisit if Velo3D documents a public or partner API.
+sources:
+- https://velo3d.com/
+- https://support.velo3d.com/
+responseCodes: {}
+limits: []
+policies:
+- name: No Public API
+  description: >-
+    Velo3D has no documented public developer API and therefore no published
+    request, token, or concurrency limits as of the research date.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

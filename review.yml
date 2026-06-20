@@ -1,0 +1,87 @@
+aid: velo3d
+name: Velo3D
+review:
+  question: Does Velo3D expose a documented public or partner developer API?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No streaming or event-driven surface is documented. Assure produces
+    billions of in-situ sensor data points per build, but that telemetry is
+    surfaced through an operator-facing real-time dashboard, not through a
+    documented public WebSocket, SSE, or messaging API. No AsyncAPI document
+    was authored because there is no documented streaming API to model.
+findings:
+  summary: |
+    Velo3D does not publish a documented public or partner developer API as of
+    the research date (2026-06-20). Velo3D is an enterprise metal
+    additive-manufacturing company whose offering is hardware plus bundled
+    software: the Sapphire family of laser powder bed fusion printers, Flow /
+    Flow Developer print-preparation software, the Assure quality-assurance
+    and control system, and the Intelligent Fusion process. Flow and Flow
+    Developer are desktop print-prep applications (native CAD import, process
+    parameter tuning) with no documented public API or SDK. Assure is an
+    operator-facing real-time monitoring dashboard, not a developer data API.
+    The Sapphire printers and Intelligent Fusion are hardware and process
+    technology. A customer support portal exists at support.velo3d.com, but no
+    developer portal, REST/GraphQL reference, OAuth endpoint, or SDK was found.
+    The OpenAPI artifact in this repo is intentionally empty (paths: {}). No
+    endpoints were fabricated.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No documented public REST API base URL or endpoint reference was found.
+    - protocol: GraphQL
+      scheme: https
+      documented: false
+      note: No GraphQL surface is documented.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No documented Server-Sent Events surface.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: Assure in-situ telemetry is shown in an operator dashboard; no documented public WebSocket API.
+  productSurfaces:
+    - name: Sapphire Printers
+      type: hardware
+      publicApi: false
+    - name: Flow Print Preparation (incl. Flow Developer)
+      type: software
+      publicApi: false
+    - name: Assure Quality Assurance
+      type: software
+      publicApi: false
+    - name: Intelligent Fusion
+      type: process
+      publicApi: false
+sources:
+  - url: https://velo3d.com/
+    type: Website
+    note: Lists Sapphire printers and Flow software, industries (aerospace, defense, energy), and engagement models; no developer API.
+  - url: https://support.velo3d.com/
+    type: Documentation
+    note: Customer support / login portal; no public developer API reference.
+  - url: https://velo3d.com/introducing-velo3ds-new-flow-developer-software/
+    type: PressRelease
+    note: Flow Developer lets engineers tune process parameters in the Sapphire ecosystem; described as software, not a public API (page now 404s).
+  - url: https://www.tctmagazine.com/velo3d-assure-quality-assurance-software-metal-3d-printing/
+    type: Article
+    note: Assure is a real-time multi-sensor quality dashboard producing billions of data points per build; operator-facing, not a documented public API.
+actions:
+  openapiPath: openapi/velo3d-openapi.yml
+  apisYmlUpdated: true
+  reason: |
+    Because no public developer API is documented, the OpenAPI document was
+    authored as an honest empty placeholder (paths: {}) with a description
+    explaining the absence, and the apis.yml entries are marked as product
+    features rather than API surfaces. Plans, rate-limits, and finops
+    artifacts are marked reconciled: false to reflect the enterprise
+    hardware/software (non-API) commercial model. No AsyncAPI, Postman, or
+    OpenAPI endpoints were fabricated.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

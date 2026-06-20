@@ -1,0 +1,78 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Velo3D
+providerId: velo3d
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Additive Manufacturing
+- Metal 3D Printing
+- Laser Powder Bed Fusion
+- Aerospace
+- Defense
+- Plans
+description: >-
+  Velo3D sells enterprise metal additive-manufacturing hardware and software,
+  not a metered developer API. Engagement is through capital purchase of
+  Sapphire printers (with Flow, Assure, and Intelligent Fusion), printing
+  services with zero capital investment, or a manufacturing network for surge
+  capacity. Pricing is quote-based and negotiated through Velo3D sales; there
+  are no published per-call, per-token, or subscription API tiers. This plans
+  artifact is not reconciled because no public API pricing exists.
+notes: >-
+  No public API or developer plan is documented. Pricing for printers,
+  software, and printing services is enterprise / quote-based. Contact Velo3D
+  sales for current terms.
+sources:
+- https://velo3d.com/
+- https://support.velo3d.com/
+plans:
+- id: velo3d-printer-purchase
+  name: Printer Purchase
+  type: enterprise
+  description: >-
+    Capital purchase of a Sapphire-family printer (Sapphire, Sapphire XC,
+    Sapphire 1MZ) bundled with Flow print-preparation software, the Assure
+    quality system, and the Intelligent Fusion process for full in-house
+    production control. Quote-based.
+  entries:
+  - label: Sapphire System
+    name: sapphire_system
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Sapphire Printers
+  - name: Flow Print Preparation
+  - name: Assure Quality Assurance
+  - name: Intelligent Fusion
+- id: velo3d-printing-services
+  name: Printing Services
+  type: enterprise
+  description: >-
+    Parts produced for the customer by Velo3D (or its manufacturing network)
+    with zero capital investment, priced per project / per part. Quote-based.
+  entries:
+  - label: Contract Manufacturing
+    name: printing_services
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Per-Part Production
+  - name: Manufacturing Network Surge Capacity
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

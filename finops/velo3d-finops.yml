@@ -1,0 +1,105 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Velo3D
+providerId: velo3d
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Additive Manufacturing
+- Metal 3D Printing
+- Laser Powder Bed Fusion
+- Aerospace
+- Defense
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Velo3D spend. Velo3D is not a usage-based cloud API; cost is
+  driven by enterprise capital purchase of Sapphire printers and bundled
+  software (Flow, Assure, Intelligent Fusion), by per-project printing
+  services, and by ongoing operating inputs such as metal powder, inert gas,
+  optics, maintenance, and energy. There is no metered API billing to map to
+  FOCUS usage records. This artifact is not reconciled because no public API
+  billing surface exists; the meters below describe physical manufacturing
+  cost drivers rather than API consumption.
+notes: >-
+  No public API or usage-based API billing exists. Cost management here is
+  capital-equipment and manufacturing-operations FinOps, not cloud-API FinOps.
+  Verify commercial terms with Velo3D sales during reconciliation.
+sources:
+- https://velo3d.com/
+- https://support.velo3d.com/
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Velo3D
+serviceCategory: Manufacturing
+billingModel:
+  pricingCategory: Enterprise
+  billingFrequency: Contract
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Usage
+focusColumns:
+  ServiceName: Velo3D Metal Additive Manufacturing
+  ServiceCategory: Manufacturing
+  ProviderName: Velo3D
+  PublisherName: Velo3D
+  InvoiceIssuerName: Velo3D
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Enterprise
+meters:
+- name: printer_capital
+  description: Capital cost of Sapphire-family printers and bundled software, amortized over service life.
+  unit: systems
+  aggregation: sum
+  dimensions:
+  - account
+  - printer_model
+- name: metal_powder
+  description: Metal powder consumed per build, a primary recurring operating cost.
+  unit: kilograms
+  aggregation: sum
+  dimensions:
+  - account
+  - material
+- name: inert_gas
+  description: Inert process gas (e.g. argon) consumed during builds.
+  unit: cubic_meters
+  aggregation: sum
+  dimensions:
+  - account
+- name: machine_hours
+  description: Printer build hours, driving energy, optics wear, and maintenance cost.
+  unit: hours
+  aggregation: sum
+  dimensions:
+  - account
+  - printer_model
+- name: printing_services
+  description: Per-project / per-part charges for parts produced as a service by Velo3D or its network.
+  unit: parts
+  aggregation: sum
+  dimensions:
+  - account
+  - project
+principles:
+- name: Visibility
+  description: Track powder, gas, energy, and machine-hour consumption per build and per program.
+- name: Allocation
+  description: Allocate printer capital and per-build operating cost to programs and cost centers.
+- name: Optimization
+  description: Use support-free Intelligent Fusion design to cut material and post-processing; maximize build-plate packing and uptime.
+- name: Accountability
+  description: Assign program owners; review per-part cost against quotes and budgets.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
