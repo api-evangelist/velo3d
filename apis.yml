@@ -89,6 +89,8 @@ apis:
     printers, Flow, and Assure into an end-to-end metal additive-manufacturing
     workflow. Process technology - no documented public developer API surface.
 common:
+- type: DomainSecurity
+  url: security/velo3d-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/velo3d
 - type: Website
@@ -101,6 +103,8 @@ common:
   url: rate-limits/velo3d-rate-limits.yml
 - type: FinOps
   url: finops/velo3d-finops.yml
+- type: Blog
+  url: https://velo3d.com/blogs
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
