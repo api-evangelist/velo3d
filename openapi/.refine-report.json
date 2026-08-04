@@ -1,0 +1,14 @@
+{
+  "provider": "velo3d",
+  "sources": [
+    "velo3d-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived velo3d-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

@@ -1,0 +1,23 @@
+openapi: 3.0.1
+info:
+  title: Velo3D API
+  description: >-
+    Velo3D builds metal additive-manufacturing systems (the Sapphire family of
+    laser powder bed fusion printers) together with Flow print-preparation
+    software, the Assure quality-assurance and control system, and the
+    Intelligent Fusion manufacturing process. As of the research date
+    (2026-06-20), Velo3D does not publish a documented public or partner
+    developer API. Flow / Flow Developer is desktop print-preparation software,
+    Assure is an operator-facing real-time quality dashboard, and the Sapphire
+    printers and Intelligent Fusion are hardware and process technology - none
+    of which expose a documented public REST, GraphQL, or streaming API. This
+    specification is therefore intentionally empty (paths: {}) and serves as an
+    honest placeholder until a public developer interface is documented. No
+    endpoints are fabricated.
+  termsOfService: https://velo3d.com/
+  contact:
+    name: Velo3D Support
+    url: https://support.velo3d.com/
+  version: '0.0'
+servers: []
+paths: {}
