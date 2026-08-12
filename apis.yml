@@ -42,7 +42,7 @@ apis:
   properties:
   - url: https://velo3d.com/
     type: Documentation
-  - url: openapi/velo3d-openapi.yml
+  - url: openapi/_original/velo3d-openapi.yml
     type: OpenAPI
   description: The Sapphire family (Sapphire, Sapphire XC, Sapphire 1MZ) of laser
     powder bed fusion metal 3D printers, using multiple 1-kilowatt lasers to produce
@@ -60,7 +60,7 @@ apis:
   properties:
   - url: https://velo3d.com/
     type: Documentation
-  - url: openapi/velo3d-openapi.yml
+  - url: openapi/_original/velo3d-openapi.yml
     type: OpenAPI
   description: Flow print-preparation software with native CAD import for designing
     and preparing support-free builds, including Flow Developer for engineers to tune
@@ -78,7 +78,7 @@ apis:
   properties:
   - url: https://velo3d.com/
     type: Documentation
-  - url: openapi/velo3d-openapi.yml
+  - url: openapi/_original/velo3d-openapi.yml
     type: OpenAPI
   description: The Assure quality-assurance and control system, a real-time dashboard
     using multi-sensor physics-based detection to validate powder health, chamber
@@ -95,7 +95,7 @@ apis:
   properties:
   - url: https://velo3d.com/
     type: Documentation
-  - url: openapi/velo3d-openapi.yml
+  - url: openapi/_original/velo3d-openapi.yml
     type: OpenAPI
   description: The Intelligent Fusion manufacturing process that integrates the Sapphire
     printers, Flow, and Assure into an end-to-end metal additive-manufacturing
