@@ -7,6 +7,17 @@ description: Velo3D builds metal additive-manufacturing systems for aerospace, d
   software, the Assure quality-assurance and control system, all powered by the Intelligent
   Fusion manufacturing process. These are enterprise hardware and software products;
   Velo3D does not publish a documented public developer API.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
