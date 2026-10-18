@@ -32,6 +32,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/velo3d.png
 tags:
+- 3D Printing
+- Metal 3D Printing
+- Laser Powder Bed Fusion
+- Aerospace
+- Defense
+tags_raw:
 - Additive Manufacturing
 - Metal 3D Printing
 - Laser Powder Bed Fusion
